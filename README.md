@@ -10,13 +10,16 @@
 
     git clone git@github.com:Jaggle/wp-geetest-3.0.git /path/to/wordpress/plugins/dir
     
+    
+> 或者你用ftp上传也行
+    
 
-修改config.php文件，替换你自己的id和key；修改权限：
+修改权限：
 
     chown -R [你web进程的用户] /path/to/wordpress/plugins/geetest
 
 
-然后到wordpress后台`已安装的插件`页面启用。
+然后到wordpress后台`已安装的插件`页面启用后，填入你在[GEETEST 极验验证](http://www.geetest.com/)官网申请的id和key即可。
 
 ## 声明
 
