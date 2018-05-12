@@ -18,4 +18,9 @@
 
 然后到wordpress后台`已安装的插件`页面启用。
 
+## 声明
+
+本插件由[GEETEST 极验验证](http://www.geetest.com/)以GPL协议发布，本人仅对该插件做了
+稍许修复。
+
     
