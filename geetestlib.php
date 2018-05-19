@@ -1,6 +1,4 @@
 <?php
-define('GT_API_SERVER', 'https://api.geetest.com');
-define('GT_SDK_VERSION', 'wordpress_1.0');
 
 class geetestlib
 {
@@ -353,5 +351,3 @@ class geetestlib
         return $result;
     }
 }
-
-?>

@@ -25,16 +25,22 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-define('GEE_NAME', plugin_basename(__FILE__));
-define('GEE_DIR', plugin_dir_path(__FILE__));
-define('GEE_URL', plugin_dir_url(__FILE__));
+defined('GEE_NAME')       or define('GEE_NAME', plugin_basename(__FILE__));
+defined('GEE_DIR')        or define('GEE_DIR', plugin_dir_path(__FILE__));
+defined('GEE_URL')        or define('GEE_URL', plugin_dir_url(__FILE__));
+defined('GT_API_SERVER')  or define('GT_API_SERVER', 'https://api.geetest.com');
+defined('GT_SDK_VERSION') or define('GT_SDK_VERSION', 'wordpress_1.0');
 
-require_once('geetest.class.php');
-//ob_start — 打开输出控制缓冲
-ob_start();
-
-if (class_exists("Geetest")) {
-    $geetest_plugin = new Geetest();
-    $geetest_plugin->start_plugin();
+if (!class_exists("Geetest")) {
+    require_once('geetest.class.php');
 }
-?>
+
+if (!class_exists('geetestlib')) {
+    require_once('geetestlib.php');
+}
+
+ob_start();
+session_start();
+
+$geetest_plugin = new Geetest();
+$geetest_plugin->start_plugin();
