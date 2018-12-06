@@ -168,9 +168,8 @@ class Geetest
         wp_enqueue_script('gt', GEE_URL . 'assets/gt.js');
 
         $geetestlib = new geetestlib();
-        $output = '<div id="gt_register" style="margin-bottom: 14px;"></div>';
-        $inline = $output . $geetestlib->get_widget($this->options['public_key'], $this->options['register'], $this->options['private_key'], "gt_register", $this->options['lang_options']);
-
+        echo '<div id="gt_register" style="margin-bottom: 14px;"></div>';
+        $inline =$geetestlib->get_widget($this->options['public_key'], $this->options['register'], $this->options['private_key'], "gt_register", $this->options['lang_options']);
         wp_add_inline_script('gt', $inline);
     }
 
