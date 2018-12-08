@@ -1,4 +1,4 @@
-<?php   
+<?php
   function _checked($value){
     if($value == "1"){
        echo "checked";
@@ -7,13 +7,13 @@
 ?>
 <div class="wrap">
    <a name="geetest"></a>
-   <h2>极验设置</h2>   
-   
+   <h2>极验设置</h2>
+
    <form id="setting_form" method="post" action="options.php">
       <?php settings_fields('geetest_options_group'); ?>
       <h3>KEY</h3>
       <p>请访问<a href="http://www.geetest.com" title="注册">geetest极验验证</a>点击注册申请自己的key.<h3>如果是在登陆页面安装验证，请确保填入正确的公钥和私钥，避免造成管理员无法登陆。</h3></p>
-      
+
       <table class="form-table">
 	  	<tr valign="top">
             <th scope="row">您的极验公钥</th>
@@ -24,7 +24,7 @@
          <tr valign="top">
             <th scope="row">您的极验私钥</th>
             <td>
-               <input id="input_public_key"  type="text" name="geetest_options[private_key]" size="40" value="<?php echo $this->options['private_key']; ?>" />               
+               <input id="input_private_key"  type="text" name="geetest_options[private_key]" size="40" value="<?php echo $this->options['private_key']; ?>" />
             </td>
          </tr>
       </table>
@@ -47,7 +47,7 @@
                <label for="geetest_options[show_in_login]">登陆使用验证码</label>
             </td>
          </tr>
-      </table>      
+      </table>
       <h3>注册设置</h3>
       <table class="form-table">
          <tr valign="top">
@@ -70,7 +70,7 @@
       </table>
       <p class="submit"><input type="submit" class="button-primary" title="保存更改" value="保存更改 &raquo;" /></p>
    </form>
-   
+
    <?php do_settings_sections('geetest_options_page'); ?>
 </div>
 <script type="text/javascript">
@@ -89,7 +89,7 @@
               return true;
             }else{
               return false;
-            } 
+            }
         }
     }
 </script>
