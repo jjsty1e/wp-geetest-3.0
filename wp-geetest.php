@@ -7,6 +7,8 @@ Version:  5.3.3
 Author: 极验验证, Jaggle
 Email: tanxu@geetest.com
 Author URI: http://www.geetest.com/
+Text Domain: geetest
+Domain Path: /languages
 */
 
 /*
