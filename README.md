@@ -5,21 +5,27 @@
 
 ![](assets/geetest.gif)
 
+## 功能
+
+- 注册验证 ✅
+- 登录验证 ✅
+- 评论验证（几乎可以屏蔽100%的spam内容）✅
 
 ## 使用方法：
 
-    git clone git@github.com:Jaggle/wp-geetest-3.0.git /path/to/wordpress/plugins/dir
+    cd /path/to/worpress-blog/wp-content/plugins
+    git clone git@github.com:Jaggle/wp-geetest-3.0.git
     
-    
+
 > 或者你用ftp上传也行
     
 
 修改权限：
 
-    chown -R [你web进程的用户] /path/to/wordpress/plugins/geetest
+    chown -R [你web进程的用户] wp-geetest-3.0
 
 
-然后到wordpress后台`已安装的插件`页面启用后，填入你在[GEETEST 极验验证](http://www.geetest.com/)官网申请的id和key即可。
+然后到wordpress后台`已安装的插件`页面启用后，填入你在[GEETEST 极验验证](http://www.geetest.com/)官网申请的public_key和private_key即可。
 
 ## 声明
 
