@@ -325,7 +325,7 @@ HEREDOC;
     function create_error_notice($message, $anchor = '')
     {
         $options_url = admin_url('options-general.php?page=geetest/geetest.class.php') . $anchor;
-        $error_message = sprintf(__($message . ' <a href="%s" title="WP-GeeTest Options">点击修复</a>', 'geetest'), $options_url);
+        $error_message = $message . sprintf(' <a href="%s" title="WP-GeeTest Options">点击修复</a>', $options_url);
 
         echo '<div class="error"><p><strong>' . $error_message . '</strong></p></div>';
     }
@@ -333,7 +333,7 @@ HEREDOC;
     function missing_keys_notice()
     {
         if ($this->geetest_enabled() && $this->keys_missing()) {
-            $this->create_error_notice('您的极验ID或私钥为空.');
+            $this->create_error_notice(__('Your Geetest Id or Key is empty.', 'geetest'));
         }
     }
     //==================================================================================

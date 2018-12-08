@@ -1,0 +1,27 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wp-geetest-3.0\n"
+"POT-Creation-Date: 2018-12-08 16:51+0800\n"
+"PO-Revision-Date: 2018-12-08 17:05+0800\n"
+"Last-Translator: \n"
+"Language-Team: yeskn studio <jaggle@yeskn.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"Language: Chinese\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+msgid "Verify not pass"
+msgstr "验证未通过"
+
+msgid "Settings for this Plugin"
+msgstr "设置该插件"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Your Geetest Id or Key is empty."
+msgstr "您的极验ID或私钥为空。"
