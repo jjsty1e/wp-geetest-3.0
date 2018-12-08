@@ -269,7 +269,7 @@ HEREDOC;
         if ($file == plugin_basename($this->plugin_directory . '/wp-geetest.php')) {
             $settings_title = __('Settings for this Plugin', 'geetest');
             $settings = __('Settings', 'geetest');
-            $settings_link = '<a href="options-general.php?page=geetest/geetest.class.php" title="' . $settings_title . '">' . $settings . '</a>';
+            $settings_link = '<a href="options-general.php?page=wp-geetest-3.0/geetest.class.php" title="' . $settings_title . '">' . $settings . '</a>';
             array_unshift($links, $settings_link);
         }
 
