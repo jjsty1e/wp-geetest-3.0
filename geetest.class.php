@@ -324,7 +324,7 @@ HEREDOC;
 
     function create_error_notice($message, $anchor = '')
     {
-        $options_url = admin_url('options-general.php?page=geetest/geetest.class.php') . $anchor;
+        $options_url = admin_url('options-general.php?page=wp-geetest-3.0/geetest.class.php') . $anchor;
         $error_message = $message . sprintf(' <a href="%s" title="WP-GeeTest Options">点击修复</a>', $options_url);
 
         echo '<div class="error"><p><strong>' . $error_message . '</strong></p></div>';
