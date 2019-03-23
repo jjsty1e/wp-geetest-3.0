@@ -58,7 +58,7 @@ class Geetest
     function register_filters()
     {
         // only register the hooks if the user wants geetest on the registration page
-        if ($this->options['show_in_login']) {
+        if ($this->options['show_in_login'] && (!defined('XMLRPC_REQUEST') || XMLRPC_REQUEST === false)) {
             // geetest validation  应用于注册新用户所生成的注册错误列表
 
             add_filter('wp_authenticate_user', array($this, 'validate_geetest_login'), 100, 1);
