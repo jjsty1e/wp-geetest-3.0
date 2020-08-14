@@ -27,6 +27,10 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
+if (wp_is_xml_request() || wp_doing_ajax()) return ;
+if (defined('XMLRPC_REQUEST') && XMLRPC_REQUEST) return ;
+if (defined( 'WP_ADMIN' ) && WP_ADMIN) return ;
+
 defined('GEE_NAME')       or define('GEE_NAME', plugin_basename(__FILE__));
 defined('GEE_DIR')        or define('GEE_DIR', plugin_dir_path(__FILE__));
 defined('GEE_URL')        or define('GEE_URL', plugin_dir_url(__FILE__));
